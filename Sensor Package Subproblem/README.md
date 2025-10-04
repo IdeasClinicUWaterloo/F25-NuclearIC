@@ -117,13 +117,13 @@ Several of the sensors provided, such as the LCD display, AHT20 and IMU, all use
 Radiation is simulated using infrared emitters and sensors. The emitter has already been created and is part of the radiation source package.
 
 #### IR Sensor connections
-See [Datasheet](https://www.vishay.com/docs/81509/bpv22nf.pdf). With the spherical side facing towards you, the anode is the left leg and the cathode the right leg. Here is one configuration of the sensor: Connect the Anode to the Arduino 5V and a 10K resistor from the Anode to ground. Connect the cathode to two 100k resistors. Connect one resistor to an Arduino analog pin and the second to ground. The sensor data can be read using the analog pin.  ![Circuit Diagram](https://github.com/IdeasClinicUWaterloo/F25-NuclearIC/blob/main/Sensor%20Package%20Subproblem/sensor_pckg_main/nuclearSensorCirc.jpg?raw=true) Our sensors only have 2 pins; ignore the middle pin in the diagram. 
+See [Datasheet](https://www.vishay.com/docs/81509/bpv22nf.pdf). With the spherical side facing towards you, the anode is the left leg and the cathode the right leg. Here is one configuration of the sensor using a pull-down resistor: Connect the Anode to the Arduino 5V. Connect the cathode to an analog pin and to a 100k resistor, connected to Ground.  ![Circuit Diagram](https://github.com/IdeasClinicUWaterloo/F25-NuclearIC/blob/main/Sensor%20Package%20Subproblem/sensor_pckg_main/nuclearSensorCirc.jpg?raw=true) Our sensors only have 2 pins; ignore the middle pin in the diagram. 
 
 ![Sensor Pins](https://github.com/IdeasClinicUWaterloo/F25-NuclearIC/blob/main/Sensor%20Package%20Subproblem/sensor_pckg_main/NucSensor.jpg?raw=true)
 
 ##### Notes:
 Reading the sensor data is simple, using `analogRead(analogPin)`
-The sensor signal is strongest when positioned directly above the emitter. Keep this in mind during testing and building your solution. The sensor will, in theory, output a range of 0-1023 depending on the strength of the signal; however, in practice, the range will likely be around 200 to 900. In the above wiring configuration, higher values represent weaker radiation. When building your solution, test the sensitivity of your sensor so you can decide the threshold for a radiation leak. 
+The sensor signal is strongest when positioned directly above the emitter. Keep this in mind during testing and building your solution. The sensor will, in theory, output a range of 0-1023 depending on the strength of the signal; however, in practice, the range will likely be around 0 to 500. In the above wiring configuration, higher values represent stronger  radiation. When building your solution, test the sensitivity of your sensor so you can decide the threshold for a radiation leak. 
 During demos, your radiation source should be placed inside the cardboard box with the IR emitter facing directly out of a small hole to represent a damaged container and a radiation leak; however, feel free to test your solution outside the box.
 
 
