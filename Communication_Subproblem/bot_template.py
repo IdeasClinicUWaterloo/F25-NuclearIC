@@ -32,6 +32,7 @@ password = creds["BLUESKY_PASSWORD"]
 client = Client()
 client.login(username, password)
 
+# TODO: Remove for IC if students are intended to complete this part themselves
 def get_latest_alert_data(sheet):
     # Fetch all records from the sheet as a list of dictionaries
     # This automatically uses row 1 as the keys for each dictionary
