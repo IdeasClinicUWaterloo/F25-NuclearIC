@@ -1,5 +1,12 @@
 # ⚠️ Alerts and Communication Subproblem 
 
+## Note for future co-ops
+* The script requires a "service_account.json" file with the Google Cloud key to be placed inside the "secrets" folder in order to run. Follow the steps in this README for instructiion on how to retrieve the key
+ * This repository is public, so do not put the credentials file directly into this Github repo. Clone the repo locally before adding the credentials file 
+* The file names being hard-coded into the script is something the students faced issues with - change?
+* Students wish the Github Action's YAML script was more explained. Not sure how to expand the subproblem to fit it
+
+
 ## Problem Description 
  Though CNL has developed the security systems to ensure safe and effective transport of the nuclear waste, they can never be truly failsafe. In the case of an incident, alerts must be rapidly disseminated to contain the hazards and minimize casualties. 
 
