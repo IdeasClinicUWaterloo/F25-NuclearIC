@@ -1,20 +1,102 @@
 # 🚛 Nuclear Loading & Unloading Monitoring Challenge
-Welcome aboard! 
 
-At Canadian National Laboratories (CNL), spent nuclear fuel is loaded into nuclear flasks and then transported from the nuclear power plant where it is generated, to a new nuclear waste repository in Northern Ontario located in Ingrace. Even with strict oversight, accidents can still occur. A critical moment during the transportation process is the loading and unloading of the nuclear flasks, which store the unused nuclear fuel. The challenge presented is making this process safe and more secure. If not handled carefully, exposed nuclear fuel can cause serious health issues to those working with it, and due to its unique qualities, it may be subject to theft. Ensuring that only the correct number of authorised personnel is working with the fuel at a time, as well as ensuring that the nuclear flask is in good condition, is imperative to transporting nuclear waste. More information on this sub-problem can be found [here.](https://uofwaterloo.sharepoint.com/:w:/r/sites/tm-eng-engineeringideasclinic/_layouts/15/Doc.aspx?sourcedoc=%7B64B1861D-5FC8-454E-A262-28F26CA1BE14%7D&file=New%20Case%20Study.docx&action=default&mobileredirect=true)
+Welcome to the Nuclear Loading & Unloading Monitoring Challenge!
 
- **Your challenge:** Design a system to enable a safer nuclear transfer process between vehicles that minimizes the possibility of material tampering and unauthorized intrusion to the transfer site.  
+This challenge is presented by Canadian Nuclear Laboratories (CNL). Your objective is to design a computer vision system that helps improve the safety and security of nuclear fuel transportation during the loading and unloading process.
 
- **Minimum Requirement for Solution:**
+# Challenge Overview
+
+Canadian Nuclear Laboratories (CNL) transports spent nuclear fuel from nuclear power plants to long-term storage facilities.
+
+Although strict safety procedures are in place, the loading and unloading process remains one of the most critical stages of transportation. During this stage, workers must safely handle nuclear flasks that contain spent nuclear fuel.
+
+Potential risks include:
+
+- Unauthorized personnel entering the work area.
+- Mechanical failure of the nuclear flask.
+- Damage or spills during transport.
+- Theft or tampering of nuclear materials.
+
+Computer vision can help improve safety by automatically monitoring personnel, equipment, and transportation procedures in real time.
+
+Additional information about this challenge can be found in the accompanying project resources.
+
+
+## Table of Contents
+
+- [Challenge Overview](#challenge-overview)
+- [Your Mission](#your-mission)
+- [Minimum Solution Requirements](#minimum-solution-requirements)
+- [Reference Materials](#reference-materials)
+- [Project Setup](#project-setup)
+
+> **Navigation Tip:** Screen reader users can navigate this document using heading levels. Keyboard users can use the Table of Contents above to quickly move between sections.
+
+# Your Mission
+
+Design a computer vision system that improves the safety and security of nuclear fuel transfers between transportation vehicles.
+
+Your solution should monitor the transfer area and automatically detect situations that may require operator attention.
+
+Examples include:
+
+- Unauthorized personnel entering the transfer area.
+- Too many workers inside restricted zones.
+- Damage or leaks involving the nuclear flask.
+- Improperly secured equipment before transportation.
+
+# Minimum Solution Requirements
+
+Your solution should be able to:
+
+- Detect unauthorized personnel within the loading and unloading area.
+- Detect when the number of people exceeds the permitted limit.
+- Determine whether the nuclear flask shows signs of mechanical failure or material leakage.
+- Verify that the nuclear flask is properly secured to the transport vehicle.
+
+---
+
+# Reference Materials
+
+The following resources may help you complete this challenge.
+
+| Resource | Purpose |
+|----------|---------|
+| Ultralytics YOLO Documentation | Learn how to train and deploy YOLO models. |
+| Roboflow Universe | Download or create annotated computer vision datasets. |
+| YOLO Performance Metrics Guide | Understand evaluation metrics such as precision, recall, and mAP. |
+| Alternate Training Methods | Learn how to train using Google Colab or a local Linux machine. |
+
+---
+## Image Accessibility
+
+If screenshots or diagrams are added to this README, each image should include descriptive alternative text.
+
+Examples:
+
+✔ Screenshot showing successful Python installation verification.
+
+✔ Diagram illustrating the nuclear loading workflow.
+
+✔ Screenshot of the Roboflow annotation interface.
+
+Decorative images should be marked as decorative so screen readers skip them.
+
+
+### Documentation
+
+- Ultralytics YOLO Documentation
+- Roboflow Universe
+- YOLO Performance Metrics Guide
+- Alternate Training Methods (Google Colab / Local Linux)
+
+### Challenge Resources
+
+- Project Setup
+- Model Training
+- Model Evaluation
+- Model Deployment
  
- - Determine if there are unauthorized personnel, or if there are too many people in the loading/unloading area.  
-
- - Check the status of the nuclear flask to see if there is a spill, or mechanical failure. 
-
- - Check to see if the flask is secured to the truck.  
-
- 
-
 ---------------------------------------------------------------------
 
 ## Reference Material
@@ -36,10 +118,15 @@ Alternate Training Methods (Google Collab / Local Linux) :  https://www.youtube.
 
 ## Project Setup
 
-**Python Interfacing for CV:**
+## Overview
 
-Note: It is strongly recommended to complete the computer vision challenge with a device that has a dedicated GPU.  
-Challenge can run with cpu-only devices, but training and execution speed can be much slower.
+This section explains how to set up your development environment for the Nuclear Loading & Unloading Monitoring Challenge.
+
+> **Accessibility Tip:** All setup instructions are provided as text instead of images so they can be read by screen readers and copied directly into a terminal.
+
+> **Recommendation:** A computer with a dedicated NVIDIA GPU is recommended. The challenge can run on CPU-only devices, but training and inference will be significantly slower.
+
+---
 
 **YOLO + OpenCV Environment Setup**
 
