@@ -12,10 +12,10 @@ Although strict safety procedures are in place, the loading and unloading proces
 
 Potential risks include:
 
-- Unauthorized personnel entering the work area.
-- Mechanical failure of the nuclear flask.
-- Damage or spills during transport.
-- Theft or tampering of nuclear materials.
+- Unauthorized personnel entering the work area
+- Mechanical failure of the nuclear flask
+- Damage or spills during transport
+- Theft or tampering of nuclear materials
 
 Computer vision can help improve safety by automatically monitoring personnel, equipment, and transportation procedures in real time.
 
