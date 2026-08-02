@@ -1,26 +1,99 @@
 # 🚚 Nuclear Transport Route Optimization Challenge
 
-**Welcome!**
+Welcome to the Nuclear Transport Route Optimization Challenge!
 
-Congratulations! You have been chosen to join a special team of engineers and scientists at Canadian Nuclear Labs (CNL). Your mission is to design a system to optimize truck routing, considering environmental challenges and on-route resources, such as gas stations.
+This challenge is presented by Canadian Nuclear Laboratories (CNL). Your objective is to design a route optimization system that safely transports spent nuclear fuel while considering environmental hazards and essential resources such as refuelling stations.
 
-Transport trucks could face a vast number of environmental conditions that present challenges for safe transportation—forest fires causing smoke and debris, floods affecting the Trans-Canada highway, as well as snow and icy conditions. Your solution would help the truck navigate around these obstacles and ensure the truck travels to its destination safely.
+---
 
-## Challenge Overview
+# Accessibility
 
-Transport trucks are loaded with spent nuclear fuel at various nuclear sites and deliver it to be stored in the nuclear waste repository in Ignace, ON. For the purpose of this challenge, let's say these trucks can travel max 1200km before needing to refuel.
+This README has been designed to be accessible to a wide range of users. It uses descriptive headings, plain language, and organized sections to improve navigation for keyboard users and screen readers.
 
-Design a system to optimize truck routing given environmental challenges and on-route resources.
+When images, screenshots, or diagrams are included:
 
-Resources provided:
-[Click here to access them!](https://github.com/IdeasClinicUWaterloo/F25-NuclearIC/tree/main/Route_Optimization_Subproblem/Location_Coordinates)
-- Road map data file "ontario_drive_network.graphml" (Can be found on [Learn](https://learn.uwaterloo.ca/d2l/le/content/1017258/viewContent/6226498/View))
-- Coordinates of nuclear sites
-- Coordinates of potential hazards
-- Coordinates of available refuelling stations
+- Provide concise and descriptive alternative (alt) text.
+- Mark decorative images as decorative so they are ignored by assistive technologies.
+- Do not rely solely on images to communicate important information.
+- Provide all code examples as selectable text instead of screenshots whenever possible.
 
-Your solution should ultimately get the truck to its destination, avoid hazards, and stop at refuelling stations as needed. Locations and coordinates have been provided.
+---
 
+# Table of Contents
+
+- [Challenge Overview](#challenge-overview)
+- [Your Mission](#your-mission)
+- [Challenge Resources](#challenge-resources)
+- [Tutorial Overview](#tutorial-overview)
+- [Project Setup](#project-setup)
+- [Creating the Nuclear Location File](#creating-the-nuclear-location-file)
+- [Route Optimization](#route-optimization)
+- [Hazard Detection](#hazard-detection)
+- [Refuelling Optimization](#refuelling-optimization)
+
+---
+# Quick Links
+
+> **Navigation Tip:** Screen reader users can navigate this document using heading levels. Keyboard users can use the Table of Contents above to quickly move between sections.
+
+### Documentation
+
+- Python Downloads
+- Visual Studio Code Downloads
+- Visual Studio Code Getting Started Guide
+- GeoJSON.io
+
+### Challenge Resources
+
+- Ontario Road Network Data
+- Nuclear Site Coordinates
+- Hazard Location Data
+- Refuelling Station Coordinates
+
+---
+
+# Challenge Overview
+
+Spent nuclear fuel must be transported safely from nuclear facilities across Ontario to the long-term nuclear waste repository located in Ignace, Ontario.
+
+During transportation, trucks may encounter environmental hazards that affect the safest available route. These hazards can include:
+
+- Forest fires
+- Flooding
+- Snow and ice
+- Road closures
+- Other environmental obstacles
+
+Transport vehicles must also stop at refuelling stations when necessary. For this challenge, assume each truck can travel a maximum of **1,200 kilometres** before refuelling.
+
+Your routing system should determine the safest and most efficient path while avoiding hazards and ensuring the vehicle reaches its destination successfully.
+
+# Your Mission
+
+Design a route optimization system that safely transports spent nuclear fuel between nuclear facilities and the storage repository.
+
+Your solution should:
+
+- Calculate efficient transportation routes.
+- Avoid hazardous environmental areas.
+- Determine when refuelling is required.
+- Select appropriate refuelling stations.
+- Safely guide the truck to its destination.
+
+# Challenge Resources
+
+The following resources are provided to help you complete this challenge.
+
+| Resource | Purpose |
+|----------|---------|
+| Ontario Road Network Graph | Road network used for routing calculations. |
+| Nuclear Site Coordinates | Starting and destination locations. |
+| Hazard Coordinates | Environmental hazards to avoid during routing. |
+| Refuelling Station Coordinates | Available truck stops for refuelling. |
+
+These resources are available through the course materials.
+
+---
 
 ## Tutorial
 
@@ -31,6 +104,20 @@ This particular solution uses the haversine formula to calculate the great circl
 We will walk through the process of defining our heuristic, finding the nearest nodes to sites, calculating routes, creating a map, populating the map, and navigating the hazards and refuelling stations.
 
 <img src="/Route_Optimization_Subproblem/images/Optimized_Route_Map.png" alt="Optimized nuclear route map from example solution">
+
+## Image Accessibility
+
+If screenshots, maps, or diagrams are added to this README, each image should include descriptive alternative text.
+
+Examples include:
+
+✔ Map showing an optimized truck route between a nuclear facility and Ignace.
+
+✔ Screenshot of the completed route displayed in a web browser.
+
+✔ Diagram illustrating the routing process with hazard avoidance.
+
+Decorative images should be marked as decorative so they are ignored by screen readers.
 
 ## Setup
 
