@@ -1,62 +1,102 @@
-# 🚚 Nuclear Transport Vehicle State Monitoring Challenge
+# Nuclear Transport Vehicle State Monitoring Challenge
 
 **Welcome!**
 
-Congratulations! You've been chosen to join an elite engineering team at Canadian Nuclear Labs (CNL). Your mission? Create an innovative system for real-time monitoring of vehicle and container conditions during nuclear waste transport across Canada.
+Congratulations! You've been chosen to join an engineering team at Canadian Nuclear Labs (CNL).
 
-Nuclear transport trucks travel through remote, isolated locations, making transportation difficult due to unpredictable and harsh road conditions. Limited service and connectivity make live updates difficult and unreliable. Your system will allow the driver to monitor the state of the package, truck and environment. This data can allow the transport truck to make important decisions, protecting local communities and the environment in cases of emergencies or unexpected road hazards. Nuclear transport is a high-security and high-risk job, and transport trucks face tough conditions—vibrations from uneven roads, shifting weight distribution during loading, harsh weather, and potential shielding failures.
-
-Your solution will help protect public safety and environmental health by promptly identifying any risks.
+Your mission is to create an innovative system for real-time monitoring of vehicle and container conditions during nuclear waste transport across Canada.
 
 ---
 
-## 📖 Challenge Overview
+## Background
 
-Design a comprehensive sensor package using Arduino Uno R4 Minima, Grove Sensor Kit, and additional sensors to monitor relevant metrics for transporting nuclear material.
+Nuclear transport trucks travel through remote, isolated locations, making transportation difficult due to unpredictable and harsh road conditions.
 
-Examples of some relevant emergencies might include:
+Limited service and connectivity can make live updates difficult and unreliable.
+
+Your system should allow the driver to monitor the state of:
+
+- The package
+- The truck
+- The surrounding environment
+
+This data can help the transport truck make important decisions, protecting local communities and the environment during emergencies or unexpected road hazards.
+
+Nuclear transport is a high-security and high-risk job. Transport trucks may experience:
+
+- Vibrations from uneven roads
+- Shifting weight distribution during loading
+- Harsh weather conditions
+- Potential shielding failures
+
+Your solution will help protect public safety and environmental health by promptly identifying potential risks.
+
+---
+
+## Challenge Overview
+
+Design a comprehensive sensor package using:
+
+- Arduino Uno R4 Minima
+- Grove Sensor Kit
+- Additional sensors
+
+The system should monitor relevant metrics for transporting nuclear material.
+
+Examples of relevant emergencies include:
+
 - Crashes
 - Storms
 - Fires
 - Radiation leaks
 
-
-Alert drivers/authorities immediately if anomalies occur!
+The system should alert drivers or authorities immediately if anomalies occur.
 
 ---
+
 ## Tools Provided
 
+### Main Components
+
 - Arduino Uno R4 Minima
-- Grove Sensor Kit:
-    - Touch Sensor
-    - Light Sensor
-    - Temperature Sensor
-    - Rotary Angle Sensor
-    - Sound Sensor
-    - Buzzer
-    - Button
-    - LED Socket
-    - LCD Screen
-    - Servo
-    - Relay
+
+### Grove Sensor Kit
+
+- Touch Sensor
+- Light Sensor
+- Temperature Sensor
+- Rotary Angle Sensor
+- Sound Sensor
+- Buzzer
+- Button
+- LED Socket
+- LCD Screen
+- Servo
+- Relay
+
+### Additional Sensors and Components
+
 - AHT20 Temperature and Humidity Sensor
 - BMX160 9-axis IMU
 - Radiation Source
-    - IR Emitter (Blue)
-    - 3V Coin battery
-    - LED (Green)
-    - Resistors
+- IR Emitter (Blue)
+- 3V Coin Battery
+- LED (Green)
+- Resistors
 - IR Sensor
 - Potentiometers
 - Pushbuttons
 - Cardboard Box
-- Wires, Resistors and breadboard
-  
-  Students are not required to use all (or any) of the provided tools to create their solution 
+- Wires
+- Breadboard
+
+> **Note**
+>
+> Students are not required to use all (or any) of the provided tools to create their solution.
 
 ![Sample Solution](https://github.com/IdeasClinicUWaterloo/F25-NuclearIC/blob/main/Sensor%20Package%20Subproblem/sensor_pckg_main/SensorPackSolution.JPG?raw=true)
 
-## ⚙️ Documentation and Reference Material
+## Documentation and Reference Material
 
 - **Microcontroller:** Arduino Uno R4 Minima
 - **Grove Sensor Kit:** [Grove Sensor Setup](https://github.com/IdeasClinicUWaterloo/Technologies-Utilized-for-Idea-s-Clinic-Challenges/blob/main/Seed%20Grove%20Kit/GUIDE.md), [Grove Sensor Wiki](https://wiki.seeedstudio.com/Grove_Starter_Kit_v3/#grove---rotary-angle-sensor), [Grove Code Starter Kit](https://github.com/Seeed-Studio/Sketchbook_Starter_Kit_V2.0/blob/master/README.md)
@@ -72,17 +112,17 @@ Alert drivers/authorities immediately if anomalies occur!
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 Follow these steps to set up your vehicle state monitoring solution:
 
-### 1. 🛠 Arduino and Grove Shield Setup
+### 1. Arduino and Grove Shield Setup
 
 - Connect your Arduino Uno R4 Minima to your computer via USB.
 - Attach the Grove Shield to your Arduino for simplified sensor connections.
 - Ensure your Arduino IDE is installed: [Arduino IDE Download](https://www.arduino.cc/en/software).
 
-### 2. 📡 Sensor Connections
+### 2. Sensor Connections
 
 For Grove kit sensor connections - refer to the provided [guide](https://github.com/IdeasClinicUWaterloo/Technologies-Utilized-for-Idea-s-Clinic-Challenges/blob/main/Seed%20Grove%20Kit/GUIDE.md) and the instruction manual inside the kits.
 Follow these specific instructions for each additional sensor:
