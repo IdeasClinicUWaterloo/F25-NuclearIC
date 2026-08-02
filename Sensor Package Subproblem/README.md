@@ -135,13 +135,13 @@ The system should alert drivers or authorities immediately if anomalies occur.
 
 Follow these steps to set up your vehicle state monitoring solution:
 
-### 1. Arduino and Grove Shield Setup
+### Arduino and Grove Shield Setup
 
 1. Connect your Arduino Uno R4 Minima to your computer via USB.
 2. Attach the Grove Shield to your Arduino for simplified sensor connections.
 3. Ensure your Arduino IDE is installed: [Arduino IDE Download](https://www.arduino.cc/en/software).
 
-### 2. Sensor Connections
+### Sensor Connections
 
 For Grove kit sensor connections - refer to the provided [guide](https://github.com/IdeasClinicUWaterloo/Technologies-Utilized-for-Idea-s-Clinic-Challenges/blob/main/Seed%20Grove%20Kit/GUIDE.md) and the instruction manual inside the kits.
 Follow these specific instructions for each additional sensor:
