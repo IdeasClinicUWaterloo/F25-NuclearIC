@@ -43,9 +43,6 @@ Your solution will help protect public safety and environmental health by prompt
 - [Getting Started](#getting-started)
   - [Arduino and Grove Shield Setup](#arduino-and-grove-shield-setup)
   - [Sensor Connections](#sensor-connections)
-    - [LCD Screen](#lcd-screen)
-    - [DFRobot BMX160 9-Axis IMU](#dfrobot-bmx160-9-axis-imu)
-    - [Adafruit AHT20 Temperature and Humidity Sensor](#adafruit-aht20-temperature-and-humidity-sensor)
     - [A Note on I2C](#a-note-on-i2c)
   - [Simulating Radiation](#simulating-radiation)
   - [Testing Stations and Demos](#testing-stations-and-demos)
@@ -147,25 +144,25 @@ For Grove kit sensor connections - refer to the provided [guide](https://github.
 Follow these specific instructions for each additional sensor:
 The LCD Screen will require the library: `Grove-LCD RGB Backlight`
 
-- DFRobot BMX160 9-Axis IMU
-    -   **Connection: (IMU -> Arduino)**
+- **DFRobot BMX160 9-Axis IMU**
+    -   *Connection: (IMU -> Arduino)*
     >VCC -> 5V
     >GND -> GND
     >SLA -> SLA
     >SDA -> SDA  
-    -   **Library:** Install `DFRobot_BMX160` via the Arduino IDE Library Manager.
-    -   **Setup Notes:** This sensor provides accelerometer, gyroscope, and magnetometer data. It communicates via I2C. Ensure no other I2C devices on the same port have address conflicts (though unlikely for these modules).
-    -   **Reference:** See [DFRobot Guide](https://wiki.dfrobot.com/BMX160_9-axis_Sensor_Module_SKU_SEN0373) for basic usage examples.
+    -   *Library:* Install `DFRobot_BMX160` via the Arduino IDE Library Manager.
+    -   *Setup Notes:* This sensor provides accelerometer, gyroscope, and magnetometer data. It communicates via I2C. Ensure no other I2C devices on the same port have address conflicts (though unlikely for these modules).
+    -   *Reference:* See [DFRobot Guide](https://wiki.dfrobot.com/BMX160_9-axis_Sensor_Module_SKU_SEN0373) for basic usage examples.
 
-- Adafruit AHT20 Temperature and Humidity Sensor
-    -   **Connection: (AHT20 -> Arduino)**
+- **Adafruit AHT20 Temperature and Humidity Sensor**
+    -   *Connection: (AHT20 -> Arduino)*
     >VCC -> 5V
     >GND -> GND
     >SLA -> SLA
     >SDA -> SDA
-    -   **Library:** Install `Adafruit_AHTx0` via the Arduino IDE Library Manager.
-    -   **Setup Notes:** Provides accurate ambient temperature and humidity. Communicates via I2C.
-    -   **Reference:** See [Adafruit AHT20 Guide](https://learn.adafruit.com/adafruit-aht20/arduino) for library usage and example code.
+    -   *Library:* Install `Adafruit_AHTx0` via the Arduino IDE Library Manager.
+    -   *Setup Notes:* Provides accurate ambient temperature and humidity. Communicates via I2C.
+    -   *Reference:* See [Adafruit AHT20 Guide](https://learn.adafruit.com/adafruit-aht20/arduino) for library usage and example code.
 
 #### A Note on I2C
 Several of the sensors provided, such as the LCD display, AHT20, and IMU, all use I2C communication.
