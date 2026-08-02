@@ -4,7 +4,7 @@ Welcome to the Nuclear Loading & Unloading Monitoring Challenge!
 
 This challenge is presented by Canadian Nuclear Laboratories (CNL). Your objective is to design a computer vision system that helps improve the safety and security of nuclear fuel transportation during the loading and unloading process.
 
-# Challenge Overview
+## Challenge Overview
 
 Canadian Nuclear Laboratories (CNL) transports spent nuclear fuel from nuclear power plants to long-term storage facilities.
 
@@ -32,7 +32,7 @@ Additional information about this challenge can be found in the accompanying pro
 
 > **Navigation Tip:** Screen reader users can navigate this document using heading levels. Keyboard users can use the Table of Contents above to quickly move between sections.
 
-# Your Mission
+## Your Mission
 
 Design a computer vision system that improves the safety and security of nuclear fuel transfers between transportation vehicles.
 
@@ -45,7 +45,7 @@ Examples include:
 - Damage or leaks involving the nuclear flask.
 - Improperly secured equipment before transportation.
 
-# Minimum Solution Requirements
+## Minimum Solution Requirements
 
 Your solution should be able to:
 
@@ -56,7 +56,7 @@ Your solution should be able to:
 
 ---
 
-# Reference Materials
+## Reference Materials
 
 The following resources may help you complete this challenge.
 
