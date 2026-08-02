@@ -40,10 +40,6 @@ Your solution will help protect public safety and environmental health by prompt
   - [Grove Sensor Kit](#grove-sensor-kit)
   - [Additional Sensors and Components](#additional-sensors-and-components)
 - [Documentation and Reference Material](#documentation-and-reference-material)
-  - [Microcontroller](#microcontroller)
-  - [Grove Sensor Kit](#grove-sensor-kit-1)
-  - [Additional Sensors](#additional-sensors)
-  - [Additional Reference](#additional-reference)
 - [Getting Started](#getting-started)
   - [Arduino and Grove Shield Setup](#arduino-and-grove-shield-setup)
   - [Sensor Connections](#sensor-connections)
@@ -129,7 +125,7 @@ The system should alert drivers or authorities immediately if anomalies occur.
     - [Adafruit AHT20 Temperature and Humidity Sensor](https://learn.adafruit.com/adafruit-aht20)
     - [IR Emitter](https://www.vishay.com/docs/81006/tsal4400.pdf)(Included in Radiation Source)
     - [IR Sensor](https://www.vishay.com/docs/81509/bpv22nf.pdf)
-- ** BreadBoard Basics ** [https://www.build-electronic-circuits.com/breadboard/]
+- **Breadboard Basics** [https://www.build-electronic-circuits.com/breadboard/]
 
   Detailed setup and code instructions for these modules are included in the sections below.
 
