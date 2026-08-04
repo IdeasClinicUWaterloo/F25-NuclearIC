@@ -5,8 +5,7 @@ Welcome to the Nuclear Transport Route Optimization Challenge!
 This challenge is presented by Canadian Nuclear Laboratories (CNL). Your objective is to design a route optimization system that safely transports spent nuclear fuel while considering environmental hazards and essential resources such as refuelling stations.
 
 ---
-
-# Accessibility
+## Accessiblity
 
 This README has been designed to be accessible to a wide range of users. It uses descriptive headings, plain language, and organized sections to improve navigation for keyboard users and screen readers.
 
@@ -19,20 +18,16 @@ When images, screenshots, or diagrams are included:
 
 ---
 
-# Table of Contents
+## Table of Contents
 
 - [Challenge Overview](#challenge-overview)
 - [Your Mission](#your-mission)
 - [Challenge Resources](#challenge-resources)
 - [Tutorial](#tutorial)
 - [Project Setup](#project-setup)
-- [Creating the Nuclear Location File](#creating-the-nuclear-location-file)
-- [Route Optimization](#route-optimization)
-- [Hazard Detection](#hazard-detection)
-- [Refuelling Optimization](#refuelling-optimization)
 
 ---
-# Quick Links
+## Quick Links
 
 > **Navigation Tip:** Screen reader users can navigate this document using heading levels. Keyboard users can use the Table of Contents above to quickly move between sections.
 
@@ -52,7 +47,7 @@ When images, screenshots, or diagrams are included:
 
 ---
 
-# Challenge Overview
+## Challenge Overview
 
 Spent nuclear fuel must be transported safely from nuclear facilities across Ontario to the long-term nuclear waste repository located in Ignace, Ontario.
 
@@ -68,7 +63,7 @@ Transport vehicles must also stop at refuelling stations when necessary. For thi
 
 Your routing system should determine the safest and most efficient path while avoiding hazards and ensuring the vehicle reaches its destination successfully.
 
-# Your Mission
+## Your Mission
 
 Design a route optimization system that safely transports spent nuclear fuel between nuclear facilities and the storage repository.
 
@@ -80,7 +75,7 @@ Your solution should:
 - Select appropriate refuelling stations.
 - Safely guide the truck to its destination.
 
-# Challenge Resources
+## Challenge Resources
 
 The following resources are provided to help you complete this challenge.
 
@@ -104,6 +99,7 @@ This particular solution uses the haversine formula to calculate the great circl
 We will walk through the process of defining our heuristic, finding the nearest nodes to sites, calculating routes, creating a map, populating the map, and navigating the hazards and refuelling stations.
 
 <img src="/Route_Optimization_Subproblem/images/Optimized_Route_Map.png" alt="Optimized nuclear route map from example solution">
+Interactive map displaying optimized transportation routes between Ontario nuclear facilities and the Ignace repository.
 
 ## Image Accessibility
 
