@@ -24,7 +24,7 @@ When images, screenshots, or diagrams are included:
 - [Challenge Overview](#challenge-overview)
 - [Your Mission](#your-mission)
 - [Challenge Resources](#challenge-resources)
-- [Tutorial Overview](#tutorial-overview)
+- [Tutorial](#tutorial)
 - [Project Setup](#project-setup)
 - [Creating the Nuclear Location File](#creating-the-nuclear-location-file)
 - [Route Optimization](#route-optimization)
@@ -119,7 +119,7 @@ Examples include:
 
 Decorative images should be marked as decorative so they are ignored by screen readers.
 
-## Setup
+## Project Setup
 
 Before starting, make sure you have Python installed:
 -   You can download Python here: https://www.python.org/downloads/
