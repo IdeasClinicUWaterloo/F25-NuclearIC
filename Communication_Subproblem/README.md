@@ -1,10 +1,10 @@
 # ⚠️ Alerts and Communication Subproblem 
 
 ## Note for future co-ops
-* The script requires a "service_account.json" file with the Google Cloud key to be placed inside the "secrets" folder in order to run. Follow the steps in this README for instructiion on how to retrieve the key
-    * This repository is public, so do not put the credentials file directly into this Github repo. Clone the repo locally before adding the credentials file 
+* The script requires a "service_account.json" file with the Google Cloud key to be placed inside the "secrets" folder in order to run. Follow the steps in this README for instruction on how to retrieve the key
+    * This repository is public, so do not put the credentials file directly into this GitHub repo. Clone the repo locally before adding the credentials file 
 * The file names being hard-coded into the script is something the students faced issues with - change?
-* Students wish the Github Action's YAML script was more explained. Not sure how to expand the subproblem to fit it
+* Students wish the GitHub Action's YAML script was more explained. Not sure how to expand the subproblem to fit it
 
 
 ## Problem Description 
@@ -35,13 +35,13 @@ This subproblem highlights the importance of responsible communication in critic
 * [**Bluesky Developer's Documentation**](https://docs.bsky.app/docs/get-started): Documentation for learning how to use Bluesky's API 
 * [**gspread Documentation**](https://docs.gspread.org/en/latest/): Documentation for learning how to use gspread to access and manipulate Google Sheets data
 * [**Geocoding and Reverse Geocoding Guide**](https://thepythoncode.com/article/get-geolocation-in-python): Guide for using geocoding to translate addresses to coordinates, and vice versa 
-* [**Github Action introduction tutorial**](https://www.youtube.com/watch_popup?v=mFFXuXjVgkU): Introduction video for using Github Action to automate Github workflows
+* [**GitHub Action introduction tutorial**](https://www.youtube.com/watch_popup?v=mFFXuXjVgkU): Introduction video for using GitHub Action to automate GitHub workflows
 ## Solution Template
 
 ### 📊 Part 1: Public and Internal Dashboard
 
 ---
-![Example dashboard](README_images/dashboard.png)
+![a web page titled "Nuclear Waste Transport Dashboard", featuring data regarding total waste shipments, years of operation, provinces covered, incident rate. It also features an overview, a map of locations covered, and a list of announcements.](README_images/dashboard.png)
 
 #### What is a Dashboard?
 A Dashboard is a tool, usually a web-application or a dedicated software, that provides a real-time overview of data. With visualizations such as charts, highlighted numbers, tables, and other structured ways of presenting information, dashboards make data more accessible and actionable.
@@ -105,12 +105,12 @@ For more advanced features of Looker Studio, read the [documentation](https://cl
 ### 📣 Part 2: Bluesky Alert Bot    
 
 ---
-![Bluesky bot feed](README_images/bot_feed.png)
+![The Bluesky profile for an example Nuclear Alert Bot. It has posted two alerts regarding a hypothetical radiation leakage situation.](README_images/bot_feed.png)
 #### What is an API?
 An Application Programming Interface (API) serves as the connection between two or more software applications. It's now an ubiquitous part of software development, and its wide application includes connecting the interface of a website to its backend database, facilitating interactions between devices (e.g. smart lightbulb and a phone), and embedding content from another website onto your own. In this problem template, a Python script will access the Bluesky API to make automated alert posts. 
 
 #### What is Bluesky? 
-Bluesky is a decentralized social media platform that looks and functions similarly to X (formerly Twitter.) It was initially developed as a Twitter research initiative before becoming an indepedent company, and has rapidly grown in user count since Twitter's rebranding as X and subsequent executive changes. 
+Bluesky is a decentralized social media platform that looks and functions similarly to X (formerly Twitter.) It was initially developed as a Twitter research initiative before becoming an independent company, and has rapidly grown in user count since Twitter's rebranding as X and subsequent executive changes. 
 
 Most importantly, it's a relevant platform to deploy an alert bot because of its free API access. While Twitter has greatly reduced the posting and read limits on its API's Free tier, Bluesky's completely free-to-access API makes the bot easy to scale without cost limitations. 
 
@@ -218,10 +218,10 @@ Consider first finding the row with the latest timestamp, and then accessing the
 
 **Hint:** For the address portion of the message, you can translate the coordinates in the Google Sheets to actual physical addresses with [reverse geocoding](https://thepythoncode.com/article/get-geolocation-in-python).
 
-#### 4. Automate via Github Action
-We are going to use Github Action for a no-cost way of deploying the "bot". Github Action is a powerful tool that can automate creating new packages, deploying apps, listening for events and conditionally performing actions based on them, and more. [Here's](https://www.youtube.com/watch_popup?v=mFFXuXjVgkU) a great introduction video, but today we are simply using it to run the bot's script every 15 minute. 
+#### 4. Automate via GitHub Action
+We are going to use GitHub Action for a no-cost way of deploying the "bot". GitHub Action is a powerful tool that can automate creating new packages, deploying apps, listening for events and conditionally performing actions based on them, and more. [Here's](https://www.youtube.com/watch_popup?v=mFFXuXjVgkU) a great introduction video, but today we are simply using it to run the bot's script every 15 minute. 
 
-1. Go to the Github repository of your project. Go to **"Settings"** > **"Security"** > **"Secrets and variables"** > **Actions**.  
+1. Go to the GitHub repository of your project. Go to **"Settings"** > **"Security"** > **"Secrets and variables"** > **Actions**.  
 
 2. In the **"Actions secrets and variables,"** tab, click **"New repository secret"** and paste the content of your ``service_account.json`` inside. Rename the secret to GOOGLE_CREDENTIALS and save.  
 
@@ -231,7 +231,7 @@ We are going to use Github Action for a no-cost way of deploying the "bot". Gith
 
 5. Create another ``workflows`` subfolder inside. 
 
-6. Create a new YAML (.yml) file that will contain the content of your automation script. We have provided a starting script that will simply run the bot script every 15 minute. 
+6. Create a new YAML (.yml) file that will contain the content of your automation script. We have provided a starting script that will simply run the bot script every 15 minutes. 
     ``` yaml
     # This workflow is used for the Communication Subproblem. 
     # It automates the bot so that its script is run every 15 minute. 
